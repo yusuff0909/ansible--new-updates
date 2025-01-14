@@ -1,0 +1,14 @@
+---
+- hosts: all
+  become: yes
+
+  tasks:
+    - name: 
+      shell: cat /etc/os-release
+    - name: Check OS
+      command: cat /etc/os-release
+      register: os_output
+
+    - name: Display output variable
+      debug:
+        var: os_output.stdout_lines
