@@ -1,15 +1,15 @@
 [ws]
-172.31.80.168
+private-ip
 [db]
-172.31.28.188
-[wind]
-172.31.20.230
+private-ip
+# [wind]
+# private-ip
 
-[wind:vars]
-ansible_user=Administrator
-ansible_password=cAG!Jvpl0Pgknn=LJVzT3grTWGoTPf=Z
-ansible_connection=ssh
-ansible_shell_type=cmd
+# [wind:vars]
+# ansible_user=Administrator
+# ansible_password=YOUR_PASSWORD
+# ansible_connection=ssh
+# ansible_shell_type=cmd
 
 [ws:vars]
 ansible_ssh_private_key_file=~/ansible-key.pem
